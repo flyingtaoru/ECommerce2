@@ -1,34 +1,1 @@
-package com.nice.search.service.impl;
-
-import com.alibaba.dubbo.config.annotation.Service;
-import com.nice.pojo.TbItem;
-import com.nice.search.service.ItemSearchService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.solr.core.SolrTemplate;
-import org.springframework.data.solr.core.query.Criteria;
-import org.springframework.data.solr.core.query.Query;
-import org.springframework.data.solr.core.query.SimpleQuery;
-import org.springframework.data.solr.core.query.result.ScoredPage;
-
-import java.util.HashMap;
-import java.util.Map;
-
-@Service
-public class ItemSearchServiceImpl implements ItemSearchService {
-    @Autowired
-    private SolrTemplate solrTemplate;
-
-    @Override
-    public Map<String, Object> search(Map searchMap) {
-        Map<String,Object> map = new HashMap<>();
-
-        Query query = new SimpleQuery();
-        Criteria criteria = new Criteria("item_keywords").is(searchMap.get("keywords"));
-        query.addCriteria(criteria);
-        ScoredPage<TbItem> tbItems = solrTemplate.queryForPage(query, TbItem.class);
-        map.put("rows",tbItems.getContent());
-
-
-        return map;
-    }
-}
+package com.nice.search.service.impl;import com.alibaba.dubbo.config.annotation.Service;import com.nice.pojo.TbItem;import com.nice.search.service.ItemSearchService;import org.springframework.beans.factory.annotation.Autowired;import org.springframework.data.domain.Page;import org.springframework.data.redis.core.RedisTemplate;import org.springframework.data.solr.core.SolrTemplate;import org.springframework.data.solr.core.query.*;import org.springframework.data.solr.core.query.result.*;import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.util.Map;@Servicepublic class ItemSearchServiceImpl implements ItemSearchService {    @Autowired    private SolrTemplate solrTemplate;    @Autowired    private RedisTemplate redisTemplate;    @Override    public Map<String, Object> search(Map searchMap) {        Map<String,Object> map = new HashMap<>();        // 高亮        map.putAll(searchList(searchMap));        // 分类        List categoryList = searchCategoryList(searchMap);        map.put("categoryList",categoryList);        // 品牌和规格        if(categoryList.size()>0){            map.putAll(searchBrandAndSpecList((String) categoryList.get(0)));        }        return map;    }    /**     * 设置高亮显示     * @param searchMap     * @return     */    private Map searchList(Map searchMap){        Map map = new HashMap();        // 设置高亮查询        HighlightQuery query = new SimpleHighlightQuery();        HighlightOptions options = new HighlightOptions().addField("item_title");  // 高亮域        options.setSimplePrefix("<em style='color:red'>");   // 高亮前缀        options.setSimplePostfix("</em>");          // 后缀        query.setHighlightOptions(options);    // 设置高亮选项        // 根据关键字查询        Criteria criteria = new Criteria("item_keywords").is(searchMap.get("keywords"));        query.addCriteria(criteria);        // 根据类目过滤        if (!"".equals(searchMap.get("category"))) {            Criteria criteriaFilter = new Criteria("item_category").is(searchMap.get("category"));            FilterQuery query_F = new SimpleFilterQuery(criteriaFilter);            query.addFilterQuery(query_F);        }                // 根据品牌过滤        if (!"".equals(searchMap.get("brand"))) {            Criteria criteriaFilter = new Criteria("item_brand").is(searchMap.get("brand"));            FilterQuery query_F = new SimpleFilterQuery(criteriaFilter);            query.addFilterQuery(query_F);        }        // 根据规格过滤        if (searchMap.get("spec")!=null) {            Map<String,String> specMap = (Map<String, String>) searchMap.get("spec");            for (String key:specMap.keySet()) {                Criteria filterCriteria=new Criteria("item_spec_"+key).is(specMap.get(key));                FilterQuery filterQuery=new SimpleFilterQuery(filterCriteria);                query.addFilterQuery(filterQuery);            }        }        HighlightPage<TbItem> tbItems = solrTemplate.queryForHighlightPage(query, TbItem.class);        for (HighlightEntry<TbItem> tbItemHighlightEntry : tbItems.getHighlighted()) {            TbItem item = tbItemHighlightEntry.getEntity();            if (tbItemHighlightEntry.getHighlights().size()>0 && tbItemHighlightEntry.getHighlights().get(0).getSnipplets().size()>0){                item.setTitle(tbItemHighlightEntry.getHighlights().get(0).getSnipplets().get(0));            }        }        map.put("rows",tbItems.getContent());        return map;    }    /**     * 查询分类列表     * @param searchMap     * @return     */    private List searchCategoryList(Map searchMap) {        List<String> list = new ArrayList<>();        Query query = new SimpleQuery();        // 搜索条件        Criteria criteria = new Criteria("item_keywords").is(searchMap.get("keywords"));        query.addCriteria(criteria);        // 设置分组        GroupOptions options = new GroupOptions().addGroupByField("item_category");        query.setGroupOptions(options);        // 得到结果        GroupPage<TbItem> tbItems = solrTemplate.queryForGroupPage(query, TbItem.class);        GroupResult<TbItem> item_category = tbItems.getGroupResult("item_category");        Page<GroupEntry<TbItem>> groupEntries = item_category.getGroupEntries();        List<GroupEntry<TbItem>> content = groupEntries.getContent();        for (GroupEntry<TbItem> tbItemGroupEntry : content) {            list.add(tbItemGroupEntry.getGroupValue());        }        return list;    }    /**     * 缓存中查询品牌和规格 通过类别名称     * @param category     * @return     */    public Map searchBrandAndSpecList(String category) {        Map map = new HashMap();        // 通过类目名查询分类id        Long itemCat = (Long) redisTemplate.boundHashOps("itemCat").get(category);        if (itemCat!=null) {            // 分类id查询品牌            List brandList = (List) redisTemplate.boundHashOps("brandList").get(itemCat);            // 分类id查询规格            List specList = (List) redisTemplate.boundHashOps("specList").get(itemCat);            map.put("brandList", brandList);            map.put("specList", specList);        }        return map;    }}

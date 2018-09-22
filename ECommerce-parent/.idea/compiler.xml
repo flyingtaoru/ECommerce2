@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ECommerce-common" />
+        <module name="ECommerce-content1-interface" />
+        <module name="ECommerce-content1-service" />
+        <module name="ECommerce-dao" />
+        <module name="ECommerce-manager-web" />
+        <module name="ECommerce-pojo" />
+        <module name="ECommerce-portal-web" />
+        <module name="ECommerce-search-interface" />
+        <module name="ECommerce-search-service" />
+        <module name="ECommerce-search-web" />
+        <module name="ECommerce-sellergoods-interface" />
+        <module name="ECommerce-sellergoods-service" />
+        <module name="ECommerce-shop-web" />
+        <module name="ECommerce-solr-util" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ECommerce-content-interface" target="1.7" />
+      <module name="ECommerce-content-service" target="1.7" />
+      <module name="maven-archiver (1)" target="1.5" />
+      <module name="maven-archiver (2)" target="1.5" />
+      <module name="maven-archiver (3)" target="1.5" />
+      <module name="maven-archiver (4)" target="1.5" />
+      <module name="maven-archiver (5)" target="1.5" />
+      <module name="maven-archiver (6)" target="1.5" />
+      <module name="maven-archiver (7)" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

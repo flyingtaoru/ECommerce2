@@ -1,0 +1,11 @@
+com/nice/manager/controller/UploadController.class
+com/nice/manager/controller/TypeTemplateController.class
+com/nice/manager/controller/ItemCatController.class
+com/nice/manager/controller/ContentCategoryController.class
+com/nice/manager/controller/GoodsController.class
+com/nice/manager/controller/SpecificationController.class
+com/nice/manager/controller/SellerController.class
+com/nice/manager/controller/ContentController.class
+com/nice/manager/controller/LoginController.class
+com/nice/manager/controller/SpecificationOptionController.class
+com/nice/manager/controller/BrandController.class
