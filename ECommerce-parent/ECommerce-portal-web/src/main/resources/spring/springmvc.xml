@@ -24,9 +24,9 @@
 	</mvc:annotation-driven>
 
 	<!-- 引用dubbo 服务 -->
-	<dubbo:application name="ECommerce-manager-web" />
+	<dubbo:application name="ECommerce-portal-web" />
 	<dubbo:registry address="zookeeper://192.168.25.128:2181"/>
-	<dubbo:annotation package="com.nice.manager.controller" />
+	<dubbo:annotation package="com.nice.protal.controller" />
 
 	<!-- 释放静态资源 -->
 	<mvc:default-servlet-handler/>

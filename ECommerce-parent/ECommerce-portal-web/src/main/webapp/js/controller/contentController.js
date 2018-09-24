@@ -1,4 +1,4 @@
-app.controller("contentController",function ($scope,contentService) {
+app.controller("contentController",function ($scope,$controller,contentService) {
     $controller('baseController',{$scope:$scope});//继承 共享$scope
 
 
@@ -9,6 +9,11 @@ app.controller("contentController",function ($scope,contentService) {
             $scope.contentList[categoryId]=response;
         });
 
+    }
+
+    $scope.search=function () {
+
+        location.href="http://localhost:9104/search.html#?keywords="+$scope.keywords;
     }
 
 })

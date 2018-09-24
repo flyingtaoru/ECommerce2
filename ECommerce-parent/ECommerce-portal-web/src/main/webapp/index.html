@@ -15,6 +15,7 @@
 	<script src="plugins/angularjs/angular.min.js"></script>
 	<script src="js/base.js"> </script>
 	<script src="js/service/contentService.js"> </script>
+	<script src="js/controller/baseController.js"></script>
 	<script src="js/controller/contentController.js"> </script>
 </head>
 
@@ -70,8 +71,8 @@
 							<form action="" class="sui-form form-inline">
 								<!--searchAutoComplete-->
 								<div class="input-append">
-									<input type="text" id="autocomplete" type="text" class="input-error input-xxlarge" />
-									<button class="sui-btn btn-xlarge btn-danger" type="button">搜索</button>
+									<input type="text" id="autocomplete" type="text" class="input-error input-xxlarge" ng-model="keywords"/>
+									<button class="sui-btn btn-xlarge btn-danger" type="button" ng-click="search()">搜索</button>
 								</div>
 							</form>
 						</div>
@@ -529,12 +530,10 @@
 						ng-repeat="item in contentList[1]"></li>
 					  </ol>
 					  <div class="carousel-inner">
-					    <div class="{{$index==0?'active':''}} item"ng-repeat="item in contentList[1]">
+					    <div class="{{$index==0?'active':''}} item" ng-repeat="item in contentList[1]">
 					    <a href="{{item.url}}">
-					    	<img src="{{item.pic}}"  />
+					    	<img src="{{item.pic}}" width="730" height="454" />
 					      </a>
-					    </div>
-					     
 					    </div>
 					  </div><a href="#myCarousel" data-slide="prev" class="carousel-control left">‹</a><a href="#myCarousel" data-slide="next" class="carousel-control right">›</a>
 					</div>

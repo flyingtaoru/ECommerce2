@@ -3,6 +3,7 @@ import java.util.List;
 import com.nice.pojo.TbGoods;
 
 import com.nice.pojo.Goods;
+import com.nice.pojo.TbItem;
 import entity.PageResult;
 /**
  * 服务层接口
@@ -66,5 +67,7 @@ public interface GoodsService {
 	 * @param status
 	 */
 	void updateStatus(Long[] ids, String status);
+
+	List<TbItem> findItemListByGoodsIdAndStatus(Long[] goodsIds, String status);
 	
 }
