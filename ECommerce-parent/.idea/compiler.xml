@@ -11,6 +11,9 @@
         <module name="ECommerce-content1-service" />
         <module name="ECommerce-dao" />
         <module name="ECommerce-manager-web" />
+        <module name="ECommerce-page-interface" />
+        <module name="ECommerce-page-service" />
+        <module name="ECommerce-page-web" />
         <module name="ECommerce-pojo" />
         <module name="ECommerce-portal-web" />
         <module name="ECommerce-search-interface" />
@@ -20,6 +23,9 @@
         <module name="ECommerce-sellergoods-service" />
         <module name="ECommerce-shop-web" />
         <module name="ECommerce-solr-util" />
+        <module name="ECommerce-user-interface" />
+        <module name="ECommerce-user-service" />
+        <module name="ECommerce-user-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

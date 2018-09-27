@@ -48,6 +48,12 @@
     <ignored path="$PROJECT_DIR$/ECommerce-search-service/target/surefire-reports/" />
     <ignored path="$PROJECT_DIR$/ECommerce-portal-web/target/tomcat/" />
     <ignored path="$PROJECT_DIR$/ECommerce-portal-web/target/apache-tomcat-maven-plugin/" />
+    <ignored path="$PROJECT_DIR$/ECommerce-page-interface/target/" />
+    <ignored path="$PROJECT_DIR$/ECommerce-page-service/target/" />
+    <ignored path="$PROJECT_DIR$/ECommerce-page-web/target/" />
+    <ignored path="$PROJECT_DIR$/ECommerce-user-interface/target/" />
+    <ignored path="$PROJECT_DIR$/ECommerce-user-service/target/" />
+    <ignored path="$PROJECT_DIR$/ECommerce-user-web/target/" />
     <manually-removed-from-ignored>
       <directory path="$PROJECT_DIR$/ECommerce-content1-service/target/" />
       <directory path="$PROJECT_DIR$/ECommerce-portal-web/target/" />
@@ -81,89 +87,83 @@
     <session id="1532252814">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="26" />
+          <entry key="project.closed" value="43" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.5" value="6" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="8" />
-          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.5" value="8" />
+          <entry key="project.open.time.6" value="6" />
+          <entry key="project.open.time.7" value="9" />
+          <entry key="project.open.time.8" value="8" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="27" />
+          <entry key="project.opened" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="conf" value="5" />
-          <entry key="css" value="2" />
-          <entry key="html" value="53" />
-          <entry key="java" value="89" />
-          <entry key="js" value="72" />
-          <entry key="properties" value="10" />
-          <entry key="xml" value="125" />
+          <entry key="OutputStream" value="2" />
+          <entry key="class" value="4" />
+          <entry key="conf" value="6" />
+          <entry key="css" value="4" />
+          <entry key="ftl" value="7" />
+          <entry key="html" value="66" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="171" />
+          <entry key="js" value="86" />
+          <entry key="properties" value="16" />
+          <entry key="xml" value="216" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="2" />
-          <entry key="HTML" value="53" />
-          <entry key="JAVA" value="89" />
-          <entry key="JavaScript" value="72" />
-          <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Properties" value="10" />
-          <entry key="XML" value="125" />
+          <entry key="CLASS" value="4" />
+          <entry key="CSS" value="4" />
+          <entry key="FTL" value="7" />
+          <entry key="HTML" value="66" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="171" />
+          <entry key="JavaScript" value="86" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Properties" value="16" />
+          <entry key="UML" value="2" />
+          <entry key="XML" value="216" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="3186" />
-          <entry key="java" value="7758" />
-          <entry key="js" value="3781" />
-          <entry key="properties" value="177" />
+          <entry key="ftl" value="1005" />
+          <entry key="html" value="3551" />
+          <entry key="java" value="12163" />
+          <entry key="js" value="4881" />
+          <entry key="properties" value="203" />
           <entry key="txt" value="22" />
-          <entry key="xml" value="1403" />
+          <entry key="xml" value="3431" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="3186" />
-          <entry key="JAVA" value="7758" />
-          <entry key="JavaScript" value="3781" />
+          <entry key="FTL" value="1005" />
+          <entry key="HTML" value="3551" />
+          <entry key="JAVA" value="12163" />
+          <entry key="JavaScript" value="4881" />
           <entry key="PLAIN_TEXT" value="22" />
-          <entry key="Properties" value="177" />
-          <entry key="XML" value="1403" />
+          <entry key="Properties" value="203" />
+          <entry key="XML" value="3431" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ECommerce-search-web/src/main/webapp/search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="343" column="39" selection-start-line="343" selection-start-column="39" selection-end-line="343" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ECommerce-search-web/src/main/webapp/js/controllers/searchController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="91" column="16" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -174,6 +174,7 @@
       <find>category</find>
       <find>Item</find>
       <find>sort</find>
+      <find>.do</find>
     </findStrings>
     <replaceStrings>
       <replace>brand</replace>
@@ -187,57 +188,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ECommerce-common/pom.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-content1-service/src/test/java/JedisTest.java" />
-        <option value="$PROJECT_DIR$/ECommerce-content1-service/src/main/java/com/nice/content/service/impl/ContentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/ECommerce-manager-web/src/main/webapp/admin/content_category.html" />
-        <option value="$PROJECT_DIR$/ECommerce-solr-util/src/main/resources/spring/applicationContext-solr.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-pojo/pom.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-manager-web/src/main/java/com/nice/manager/controller/ContentController.java" />
-        <option value="$PROJECT_DIR$/ECommerce-portal-web/src/main/webapp/js/service/contentService.js" />
-        <option value="$PROJECT_DIR$/ECommerce-solr-util/pom.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-search-interface/pom.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-search-service/src/main/resources/spring/applicationContext-tx.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-search-service/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-search-web/src/main/resources/spring/springmvc.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-solr-util/src/main/resources/spring/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-solr-util/src/main/java/com/nice/solrutil/SolrUtil.java" />
-        <option value="$PROJECT_DIR$/ECommerce-pojo/src/main/java/com/nice/pojo/TbItem.java" />
-        <option value="$PROJECT_DIR$/ECommerce-search-web/src/main/webapp/js/services/searchService.js" />
-        <option value="$PROJECT_DIR$/ECommerce-search-web/src/main/java/com/nice/search/ItemSearchController.java" />
-        <option value="$PROJECT_DIR$/ECommerce-search-web/src/main/java/com/nice/search/controller/ItemSearchController.java" />
-        <option value="$PROJECT_DIR$/ECommerce-search-web/pom.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-search-service/src/main/resources/spring/applicationContext-service.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-sellergoods-service/pom.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-dao/src/main/resources/spring/applicationContext-dao.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-manager-web/src/main/webapp/js/controllers/itemCatController.js" />
-        <option value="$PROJECT_DIR$/ECommerce-manager-web/src/main/webapp/admin/item_cat.html" />
-        <option value="$PROJECT_DIR$/ECommerce-search-web/src/main/webapp/js/base.js" />
-        <option value="$PROJECT_DIR$/ECommerce-sellergoods-service/src/main/java/com/nice/sellergoods/service/impl/ItemCatServiceImpl.java" />
-        <option value="$PROJECT_DIR$/ECommerce-sellergoods-service/src/main/java/com/nice/sellergoods/service/impl/TypeTemplateServiceImpl.java" />
-        <option value="$PROJECT_DIR$/ECommerce-search-service/pom.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-search-service/src/test/java/RedisTest.java" />
-        <option value="$PROJECT_DIR$/ECommerce-search-web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$USER_HOME$/黑马/品优购day10/代码/pinyougou-parent/pinyougou-search-web/src/main/webapp/search.html" />
-        <option value="$PROJECT_DIR$/ECommerce-sellergoods-service/src/main/java/com/nice/sellergoods/service/impl/GoodsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/ECommerce-sellergoods-interface/src/main/java/com/nice/sellergoods/service/GoodsService.java" />
-        <option value="$PROJECT_DIR$/ECommerce-manager-web/pom.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-search-interface/src/main/java/com/nice/search/service/ItemSearchService.java" />
-        <option value="$PROJECT_DIR$/ECommerce-manager-web/src/main/java/com/nice/manager/controller/GoodsController.java" />
-        <option value="$PROJECT_DIR$/ECommerce-portal-web/src/main/resources/config/application.properties" />
         <option value="$PROJECT_DIR$/ECommerce-search-service/src/main/java/com/nice/search/service/impl/ItemSearchServiceImpl.java" />
-        <option value="$PROJECT_DIR$/ECommerce-portal-web/src/main/webapp/js/controller/contentController.js" />
-        <option value="$PROJECT_DIR$/ECommerce-portal-web/src/main/java/com/nice/protal/controller/ContentController.java" />
-        <option value="$PROJECT_DIR$/ECommerce-portal-web/src/main/resources/spring/springmvc.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-content1-service/src/main/resources/spring/applicationContext-service.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-content1-service/pom.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-common/src/main/resources/spring/applicationContext-redis.xml" />
-        <option value="$PROJECT_DIR$/ECommerce-shop-web/src/main/resources/spring/springmvc.xml" />
-        <option value="$USER_HOME$/黑马/品优购day10/代码/pinyougou-parent/pinyougou-portal-web/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/ECommerce-portal-web/src/main/webapp/index.html" />
-        <option value="$USER_HOME$/黑马/品优购day11/代码/pinyougou-parent/pinyougou-search-web/src/main/webapp/search.html" />
-        <option value="$PROJECT_DIR$/ECommerce-search-web/src/main/webapp/js/controllers/searchController.js" />
+        <option value="$PROJECT_DIR$/ECommerce-page-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-page-service/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-page-service/src/test/java/TestValue.java" />
+        <option value="$PROJECT_DIR$/ECommerce-page-service/src/main/resources/spring/applicationContext-service.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-page-service/src/main/webapp/WEB-INF/ftl/head.html" />
+        <option value="$PROJECT_DIR$/ECommerce-page-service/src/main/webapp/WEB-INF/ftl/foot.html" />
+        <option value="$PROJECT_DIR$/ECommerce-page-service/src/main/webapp/WEB-INF/ftl/foot.ftl" />
+        <option value="$PROJECT_DIR$/ECommerce-page-service/src/main/webapp/WEB-INF/ftl/head.ftl" />
+        <option value="$USER_HOME$/item/js/controllers/searchController.js" />
+        <option value="$USER_HOME$/item/item149187842867965.html" />
+        <option value="$PROJECT_DIR$/ECommerce-page-service/src/main/webapp/WEB-INF/ftl/item.ftl" />
+        <option value="$PROJECT_DIR$/ECommerce-page-service/src/main/resources/properties/page.properties" />
+        <option value="$USER_HOME$/item/js/controllers/itemController.js" />
+        <option value="$PROJECT_DIR$/ECommerce-page-web/pom.xml" />
         <option value="$PROJECT_DIR$/ECommerce-search-web/src/main/webapp/search.html" />
+        <option value="$PROJECT_DIR$/ECommerce-search-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-manager-web/src/main/resources/spring/applicationContext-jms-producer.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-manager-web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-search-service/src/main/resources/spring/applicationContext-jms-consumer.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-manager-web/pom.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-common/src/main/resources/spring/applicationContext-redis.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-sellergoods-service/src/main/java/com/nice/sellergoods/service/impl/GoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ECommerce-manager-web/src/main/resources/spring/spring-activemq.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-page-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-page-service/src/main/resources/spring/applicationContext-jms-consumer.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-manager-web/src/main/java/com/nice/manager/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/ECommerce-page-interface/src/main/java/com/nice/page/service/ItemPageService.java" />
+        <option value="$PROJECT_DIR$/ECommerce-page-service/src/main/java/com/nice/page/service/impl/ItemPageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ECommerce-search-service/src/main/java/com/nice/search/service/impl/ItemSearchListener.java" />
+        <option value="$PROJECT_DIR$/ECommerce-search-service/src/main/java/com/nice/search/service/impl/itemDeleteListener.java" />
+        <option value="$PROJECT_DIR$/ECommerce-page-service/src/main/java/com/nice/page/service/impl/PageDeleteListener.java" />
+        <option value="$PROJECT_DIR$/ECommerce-page-service/src/main/java/com/nice/page/service/impl/PageListener.java" />
+        <option value="$PROJECT_DIR$/ECommerce-user-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-user-service/src/main/resources/spring/applicationContext-service.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-user-service/src/main/resources/spring/applicationContext-tx.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-user-service/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-user-web/pom.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-user-web/src/main/resources/spring/springmvc.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-user-web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-user-web/src/main/webapp/js/base.js" />
+        <option value="$PROJECT_DIR$/ECommerce-common/src/main/java/com/nice/utils/PhoneFormatCheckUtils.java" />
+        <option value="$PROJECT_DIR$/ECommerce-user-service/src/main/resources/spring/applicationContext-jms-producer.xml" />
+        <option value="$PROJECT_DIR$/ECommerce-user-service/src/main/resources/properties/sms.properties" />
+        <option value="$PROJECT_DIR$/ECommerce-user-web/src/main/webapp/register.html" />
+        <option value="$PROJECT_DIR$/ECommerce-user-web/src/main/webapp/js/controller/userController.js" />
+        <option value="$PROJECT_DIR$/ECommerce-user-web/src/main/webapp/js/service/userService.js" />
+        <option value="$PROJECT_DIR$/ECommerce-user-interface/src/main/java/com/nice/user/service/UserService.java" />
+        <option value="$PROJECT_DIR$/ECommerce-user-web/src/main/java/com/nice/user/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/ECommerce-user-service/src/main/java/com/nice/user/service/impl/UserServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -273,12 +274,13 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/ECommerce-manager-web/src/main/webapp/plugins/select2/package.json" />
+      <path value="$PROJECT_DIR$/ECommerce-page-web/src/main/webapp/plugins/select2/package.json" />
       <path value="$PROJECT_DIR$/ECommerce-portal-web/src/main/webapp/plugins/select2/package.json" />
       <path value="$PROJECT_DIR$/ECommerce-search-web/src/main/webapp/plugins/select2/package.json" />
       <path value="$PROJECT_DIR$/ECommerce-shop-web/src/main/webapp/plugins/select2/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="972" />
@@ -351,7 +353,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -363,14 +364,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537795374006" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538031881155" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -386,11 +389,11 @@
       <recent name="com.nice.manager.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/ECommerce-portal-web/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/ECommerce-portal-web/src/main/resources" />
-      <recent name="$PROJECT_DIR$/ECommerce-pojo/src/main/resources/spring" />
-      <recent name="$PROJECT_DIR$/ECommerce-search-web/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/ECommerce-search-web/src/main/webapp/js" />
+      <recent name="$PROJECT_DIR$/ECommerce-user-service/src/main/resources/spring" />
+      <recent name="$PROJECT_DIR$/ECommerce-common/src/main/java/com/nice/utils" />
+      <recent name="$PROJECT_DIR$/ECommerce-user-web/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/ECommerce-user-interface/src/main/java/com/nice/user/service" />
+      <recent name="$PROJECT_DIR$/ECommerce-user-service/src/main/java/com/nice/user/service/impl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -405,7 +408,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RedisTest.test1">
+  <component name="RunManager" selected="JUnit.TestValue.test1">
     <configuration name="SolrUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nice.solrutil.SolrUtil" />
       <module name="ECommerce-solr-util" />
@@ -433,6 +436,16 @@
       <module name="ECommerce-search-service" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RedisTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestValue.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ECommerce-page-service" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestValue" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -490,9 +503,11 @@
       <item itemvalue="JUnit.JedisTest.testRedis" />
       <item itemvalue="Application.SolrUtil" />
       <item itemvalue="JUnit.RedisTest.test1" />
+      <item itemvalue="JUnit.TestValue.test1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestValue.test1" />
         <item itemvalue="JUnit.RedisTest.test1" />
         <item itemvalue="Application.SolrUtil" />
         <item itemvalue="JUnit.JedisTest.testRedis" />
@@ -535,7 +550,23 @@
       <workItem from="1537686123702" duration="6069000" />
       <workItem from="1537767099794" duration="2070000" />
       <workItem from="1537789148218" duration="607000" />
-      <workItem from="1537790855762" duration="4691000" />
+      <workItem from="1537790855762" duration="5038000" />
+      <workItem from="1537834866452" duration="32000" />
+      <workItem from="1537835704920" duration="30000" />
+      <workItem from="1537836733531" duration="772000" />
+      <workItem from="1537837933044" duration="48000" />
+      <workItem from="1537839882342" duration="3815000" />
+      <workItem from="1537848386130" duration="129000" />
+      <workItem from="1537857567533" duration="7585000" />
+      <workItem from="1537870098331" duration="5608000" />
+      <workItem from="1537930171670" duration="1228000" />
+      <workItem from="1537936732689" duration="146000" />
+      <workItem from="1537941298219" duration="8012000" />
+      <workItem from="1537954894668" duration="1180000" />
+      <workItem from="1538016664357" duration="1999000" />
+      <workItem from="1538022063810" duration="4819000" />
+      <workItem from="1538029615021" duration="2268000" />
+      <workItem from="1538032044920" duration="1163000" />
     </task>
     <task id="LOCAL-00001" summary="change mac">
       <created>1537519219928</created>
@@ -562,12 +593,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JedisTest_testRedis - 2018.09.20 at 10h 04m 27s.xml">
-      <configuration name="JedisTest.testRedis" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RedisTest_test1 - 2018.09.22 at 15h 56m 09s.xml">
-      <configuration name="RedisTest.test1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RedisTest_test1 - 2018.09.22 at 15h 56m 17s.xml">
       <configuration name="RedisTest.test1" configurationId="JUnit" />
     </history-entry>
@@ -589,14 +614,23 @@
     <history-entry file="RedisTest_test1 - 2018.09.22 at 20h 05m 16s.xml">
       <configuration name="RedisTest.test1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestValue_test1 - 2018.09.25 at 15h 06m 06s.xml">
+      <configuration name="TestValue.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestValue_test1 - 2018.09.25 at 15h 07m 31s.xml">
+      <configuration name="TestValue.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestValue_test1 - 2018.09.25 at 15h 10m 08s.xml">
+      <configuration name="TestValue.test1" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109635000" />
+    <option name="totallyTimeSpent" value="148816000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="972" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="972" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2783883" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24175824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -606,7 +640,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32045454" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32045454" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -619,7 +653,7 @@
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" weight="0.27613637" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24969475" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -669,307 +703,325 @@
     <MESSAGE value="change mac" />
     <option name="LAST_COMMIT_MESSAGE" value="change mac" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ECommerce-search-service/pom.xml">
+    <entry file="file://$PROJECT_DIR$/ECommerce-search-service/src/main/java/com/nice/search/service/impl/ItemSearchListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+        <state relative-caret-position="360">
+          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-manager-web/src/main/webapp/admin/item_cat.html">
+    <entry file="file://$PROJECT_DIR$/ECommerce-search-service/src/main/java/com/nice/search/service/impl/itemDeleteListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="375">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-search-service/src/test/java/RedisTest.java">
+    <entry file="file://$PROJECT_DIR$/ECommerce-page-service/src/main/java/com/nice/page/service/impl/PageListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        <state relative-caret-position="375">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/黑马/品优购day10/代码/pinyougou-parent/pinyougou-search-web/src/main/webapp/search.html">
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-interface/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="199" column="38" lean-forward="true" selection-start-line="199" selection-start-column="38" selection-end-line="199" selection-end-column="38" />
+        <state relative-caret-position="315">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-solr-util/src/main/java/com/nice/solrutil/SolrUtil.java">
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-interface/src/main/java/com/nice/user/service/UserServive.java" />
+    <entry file="file://$PROJECT_DIR$/ECommerce-sellergoods-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="593">
+          <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="114" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-solr-util/src/main/resources/spring/applicationContext.xml">
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-service/src/main/resources/spring/applicationContext-tx.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+        <state relative-caret-position="360">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-search-web/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/ECommerce-search-service/src/main/resources/spring/applicationContext-tx.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="375">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-sellergoods-service/src/main/java/com/nice/sellergoods/service/impl/GoodsServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/../superSSM/superssm_web/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="223" column="33" selection-start-line="223" selection-start-column="33" selection-end-line="223" selection-end-column="33" />
+        <state relative-caret-position="284">
+          <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-sellergoods-interface/src/main/java/com/nice/sellergoods/service/GoodsService.java">
+    <entry file="file://$PROJECT_DIR$/ECommerce-sellergoods-service/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="240">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-manager-web/pom.xml">
+    <entry file="file://$PROJECT_DIR$/ECommerce-search-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
+        <state relative-caret-position="608">
+          <caret line="90" selection-start-line="15" selection-start-column="7" selection-end-line="90" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-search-interface/src/main/java/com/nice/search/service/ItemSearchService.java">
+    <entry file="file://$PROJECT_DIR$/ECommerce-shop-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        <state relative-caret-position="488">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="98" column="40" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-web/src/main/resources/config/fdfs_client.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-web/src/main/resources/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECommerce-shop-web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="788">
+          <caret line="56" selection-start-line="6" selection-start-column="3" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-web/src/main/webapp/css/webbase.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-web/src/main/webapp/js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/黑马/品优购day14/代码/day-14/pinyougou-parent/pinyougou-common/src/main/java/util/PhoneFormatCheckUtils.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/regex/Pattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="768" column="19" selection-start-line="768" selection-start-column="19" selection-end-line="768" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECommerce-common/src/main/java/com/nice/utils/PhoneFormatCheckUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECommerce-manager-web/src/main/webapp/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECommerce-manager-web/src/main/resources/spring/spring-activemq.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECommerce-manager-web/src/main/resources/spring/spring-security.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/黑马/品优购day14/代码/day-14/pinyougou-parent/pinyougou-user-service/src/main/resources/spring/applicationContext-jms-producer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ECommerce-manager-web/src/main/java/com/nice/manager/controller/GoodsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="116" column="14" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
+        <state relative-caret-position="551">
+          <caret line="160" column="58" selection-start-line="160" selection-start-column="58" selection-end-line="160" selection-end-column="58" />
+          <folding>
+            <element signature="e#4103#4328#0" expanded="true" />
+            <element signature="e#4327#4328#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-shop-web/src/main/webapp/admin/goods_edit.html">
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-service/src/main/resources/properties/sms.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-274" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-search-web/src/main/webapp/js/controllers/baseController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-manager-web/src/main/resources/config/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/黑马/品优购day10/代码/pinyougou-parent/pinyougou-portal-web/src/main/resources/config/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-portal-web/src/main/resources/config/fdfs_client.conf" />
-    <entry file="file://$PROJECT_DIR$/ECommerce-portal-web/src/main/resources/config/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-shop-web/src/main/webapp/js/controllers/goodsController.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-manager-web/src/main/webapp/js/controllers/brandController.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-portal-web/src/main/webapp/js/service/contentService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="50" />
+        <state relative-caret-position="15">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-portal-web/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$USER_HOME$/黑马/品优购day14/代码/day-14/pinyougou-parent/pinyougou-user-service/src/main/java/com/pinyougou/user/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59" />
+        <state relative-caret-position="188">
+          <caret line="179" column="23" lean-forward="true" selection-start-line="179" selection-start-column="23" selection-end-line="179" selection-end-column="23" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-sellergoods-service/src/main/resources/spring/applicationContext-service.xml">
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-service/src/main/resources/spring/applicationContext-service.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-content1-service/src/main/resources/spring/applicationContext-tx.xml">
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-service/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="20" column="80" lean-forward="true" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
+        <state relative-caret-position="195">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-portal-web/src/main/resources/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-manager-web/src/main/resources/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-portal-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1268" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-portal-web/src/main/java/com/nice/protal/controller/ContentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-content1-service/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/ECommerce-page-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-content1-service/src/main/resources/spring/applicationContext-service.xml">
+    <entry file="file://$PROJECT_DIR$/ECommerce-page-service/src/main/java/com/nice/page/service/impl/ItemPageServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        <state relative-caret-position="1140">
+          <caret line="98" column="25" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-content1-service/src/main/java/com/nice/content/service/impl/ContentCategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-64">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-content1-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="109" column="33" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-search-service/src/main/resources/spring/applicationContext-service.xml">
+    <entry file="file://$PROJECT_DIR$/ECommerce-page-service/src/main/resources/properties/page.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-search-web/src/main/resources/spring/springmvc.xml">
+    <entry file="file://$PROJECT_DIR$/ECommerce-page-service/src/main/resources/spring/applicationContext-jms-consumer.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+        <state relative-caret-position="240">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-search-web/pom.xml">
+    <entry file="file://$PROJECT_DIR$/ECommerce-page-service/src/main/resources/spring/applicationContext-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECommerce-page-service/src/main/resources/spring/applicationContext-tx.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-shop-web/src/main/resources/spring/springmvc.xml">
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        <state relative-caret-position="219">
+          <caret line="80" column="20" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ECommerce-common/src/main/resources/spring/applicationContext-redis.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECommerce-common/src/main/resources/config/redis-config.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECommerce-dao/src/main/resources/spring/applicationContext-dao.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECommerce-page-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="102" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="102" />
+        <state relative-caret-position="292">
+          <caret line="89" column="37" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-shop-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-web/src/main/webapp/js/model/cartModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225" />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-shop-web/src/main/resources/config/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-web/src/main/webapp/js/controller/userController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-shop-web/src/main/resources/spring/spring-security.xml">
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-web/src/main/webapp/js/service/userService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-service/src/main/resources/spring/applicationContext-jms-producer.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-portal-web/src/main/webapp/js/controller/contentController.js">
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-interface/src/main/java/com/nice/user/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="30" />
+        <state relative-caret-position="728">
+          <caret line="74" column="37" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-content1-service/src/main/java/com/nice/content/service/impl/ContentServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-web/src/main/java/com/nice/user/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="699">
-          <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
+        <state relative-caret-position="-158">
+          <caret line="67" column="53" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/黑马/品优购day10/代码/pinyougou-parent/pinyougou-portal-web/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="543" column="77" selection-start-line="543" selection-start-column="53" selection-end-line="543" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-portal-web/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="534" column="79" lean-forward="true" selection-start-line="534" selection-start-column="79" selection-end-line="534" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-search-service/src/main/java/com/nice/search/service/impl/ItemSearchServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/黑马/品优购day11/代码/pinyougou-parent/pinyougou-search-service/src/main/java/com/pinyougou/search/service/impl/ItemSearchServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1175">
-          <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/黑马/品优购day11/代码/pinyougou-parent/pinyougou-search-web/src/main/webapp/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="318" column="37" lean-forward="true" selection-start-line="318" selection-start-column="37" selection-end-line="318" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SQL/day22-javascript/变量和运算.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-392">
-          <caret line="57" column="74" lean-forward="true" selection-start-line="57" selection-start-column="74" selection-end-line="57" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/黑马/品优购day11/代码/pinyougou-parent/pinyougou-search-web/src/main/webapp/js/controller/searchController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-916">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-search-web/src/main/webapp/js/controllers/searchController.js">
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-web/src/main/webapp/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
-          <caret line="91" column="16" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
+          <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECommerce-search-web/src/main/webapp/search.html">
+    <entry file="file://$PROJECT_DIR$/ECommerce-user-service/src/main/java/com/nice/user/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="343" column="39" selection-start-line="343" selection-start-column="39" selection-end-line="343" selection-end-column="39" />
+        <state relative-caret-position="628">
+          <caret line="182" column="13" lean-forward="true" selection-start-line="182" selection-start-column="13" selection-end-line="182" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5742#5743#0" expanded="true" />
+            <element signature="e#5764#5765#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1027,7 +1079,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>ECommerce-parent</last-edited>
+          <last-edited>ECommerce-user-interface</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

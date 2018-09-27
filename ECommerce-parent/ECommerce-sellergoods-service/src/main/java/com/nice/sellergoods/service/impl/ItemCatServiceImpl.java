@@ -109,8 +109,10 @@ public class ItemCatServiceImpl implements ItemCatService {
         // 缓存
         List<TbItemCat> list = findAll();
         for (TbItemCat itemCat1 : list) {
-            redisTemplate.boundHashOps("itemCat").put(itemCat1.getName(),
-                    itemCat1.getTypeId());
+            if (itemCat1.getName()!=null) {
+                redisTemplate.boundHashOps("itemCat").put(itemCat1.getName(),
+                        itemCat1.getTypeId());
+            }
         }
 
         return new PageResult(page.getTotal(), page.getResult());
@@ -125,8 +127,10 @@ public class ItemCatServiceImpl implements ItemCatService {
         // 缓存
         List<TbItemCat> list = findAll();
         for (TbItemCat itemCat : list) {
-            redisTemplate.boundHashOps("itemCat").put(itemCat.getName(),
-                    itemCat.getTypeId());
+            if (itemCat.getName()!= null) {
+                redisTemplate.boundHashOps("itemCat").put(itemCat.getName(),
+                        itemCat.getTypeId());
+            }
         }
 
         return itemCatMapper.selectByExample(example);

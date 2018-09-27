@@ -294,6 +294,12 @@
         <module>ECommerce-search-interface</module>
         <module>ECommerce-search-service</module>
         <module>ECommerce-search-web</module>
+        <module>ECommerce-page-interface</module>
+        <module>ECommerce-page-service</module>
+        <module>ECommerce-page-web</module>
+        <module>ECommerce-user-interface</module>
+        <module>ECommerce-user-service</module>
+        <module>ECommerce-user-web</module>
     </modules>
 
 

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <!-- 真正的connection生产者 -->
+    <beans:bean id="targetConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory" >
+        <beans:property name="brokerURL" value="tcp://192.168.25.128:61616"></beans:property>
+    </beans:bean>
+
+    <!-- spring管理的connection -->
+    <beans:bean id="connectionFactory" class="org.springframework.jms.connection.SingleConnectionFactory">
+        <beans:property name="targetConnectionFactory" ref="targetConnectionFactory"></beans:property>
+    </beans:bean>
+
+    <!-- 点对点 队列 -->
+    <beans:bean id="queueSolrDestination" class="org.apache.activemq.command.ActiveMQQueue">
+        <beans:constructor-arg value="ECommerce_queue_solr"></beans:constructor-arg>
+    </beans:bean>
+    <beans:bean id="queueSolrDeleteDestination" class="org.apache.activemq.command.ActiveMQQueue">
+        <beans:constructor-arg value="ECommerce_queue_solr_delete"/>
+    </beans:bean>
+
+    <!-- 订阅模式 -->
+    <beans:bean id="topicPageDestination" class="org.apache.activemq.command.ActiveMQTopic">
+        <beans:constructor-arg value="ECommerce_topic_page"/>
+    </beans:bean>
+    <beans:bean id="topicPageDeleteDestination" class="org.apache.activemq.command.ActiveMQTopic">
+        <beans:constructor-arg value="ECommerce_topic_page_delete"/>
+    </beans:bean>
+
+    <!-- spring提供的JMS工具类 -->
+    <beans:bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+        <beans:property name="connectionFactory" ref="connectionFactory"></beans:property>
+    </beans:bean>
+
+</beans:beans>

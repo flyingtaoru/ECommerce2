@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <context:component-scan base-package="com.nice.search.service"></context:component-scan>
+
+    <!-- 真正生成connection的类 -->
+    <bean id="targetConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+        <property name="brokerURL" value="tcp://192.168.25.128:61616"></property>
+    </bean>
+
+    <!-- spring管理connection的类 -->
+    <bean id="connectionFactory" class="org.springframework.jms.connection.SingleConnectionFactory">
+        <property name="targetConnectionFactory" ref="targetConnectionFactory"></property>
+    </bean>
+
+    <!-- 点对点 列队 用于创建-->
+    <bean id="queueSolrDestination" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg value="ECommerce_queue_solr"></constructor-arg>
+    </bean>
+    <!-- 用于删除 -->
+    <bean id="queueSolrDeleteDestination" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg value="ECommerce_queue_solr_delete"/>
+    </bean>
+
+    <!-- 监听容器 用于创建-->
+    <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionFactory"></property>
+        <property name="destination" ref="queueSolrDestination"></property>
+        <property name="messageListener" ref="itemSearchListener" />
+    </bean>
+    <!-- 用于删除 -->
+    <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionFactory"></property>
+        <property name="destination" ref="queueSolrDeleteDestination"></property>
+        <property name="messageListener" ref="itemDeleteListener" />
+    </bean>
+
+
+</beans>

@@ -9,6 +9,7 @@ import java.util.Date;
 import java.util.Map;
 
 public class TbItem implements Serializable {
+    @Field
     private Long id;
 
     @Field("item_title")

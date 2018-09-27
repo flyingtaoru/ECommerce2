@@ -88,7 +88,7 @@ public class GoodsServiceImpl implements GoodsService {
             tbItem.setTitle(goods.getGoods().getGoodsName()); // 标题
             tbItem.setPrice(goods.getGoods().getPrice());   // 价格
             tbItem.setIsDefault("1"); // 是否默认规格
-            tbItem.setStatus("1");    // 状态激活
+            tbItem.setStatus("0");    // 状态激活
             tbItem.setNum(99999);		// 库存
             tbItem.setSpec("{}");   // 规格
             setTbItemValue(goods,tbItem);  // 其他属性设置方法调用
@@ -225,7 +225,16 @@ public class GoodsServiceImpl implements GoodsService {
 				TbGoods goods = goodsMapper.selectByPrimaryKey(id);
 				goods.setAuditStatus(status);
 				goodsMapper.updateByPrimaryKey(goods);
-			}
+				// 更新item状态
+				TbItemExample example = new TbItemExample();
+                TbItemExample.Criteria criteria = example.createCriteria();
+                criteria.andGoodsIdEqualTo(id);
+                List<TbItem> tbItems = itemMapper.selectByExample(example);
+                for (TbItem tbItem : tbItems) {
+                    tbItem.setStatus(status);
+                    itemMapper.updateByPrimaryKey(tbItem);
+                }
+            }
 		}
 	}
 

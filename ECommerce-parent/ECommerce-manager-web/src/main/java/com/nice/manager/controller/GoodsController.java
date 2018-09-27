@@ -1,20 +1,30 @@
 package com.nice.manager.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.alibaba.fastjson.JSON;
+//import com.nice.page.service.ItemPageService;
 import com.nice.pojo.Goods;
 import com.nice.pojo.TbGoods;
 import com.nice.pojo.TbItem;
 import com.nice.pojo.TbItemCat;
-import com.nice.search.service.ItemSearchService;
+//import com.nice.search.service.ItemSearchService;
 import com.nice.sellergoods.service.GoodsService;
 import com.nice.sellergoods.service.ItemCatService;
 import entity.PageResult;
 import entity.Result;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
+import javax.jms.Destination;
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.Session;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
@@ -34,8 +44,26 @@ public class GoodsController {
     @Reference
     private ItemCatService itemCatService;
 
-    @Reference
-    private ItemSearchService itemSearchService;
+    /*@Reference
+    private ItemSearchService itemSearchService;*/
+
+    /*@Reference(timeout = 40000)
+    private ItemPageService itemPageService;*/
+
+    @Autowired
+    private JmsTemplate jmsTemplate;
+
+    @Autowired
+    private Destination queueSolrDestination;
+
+    @Autowired
+    private Destination queueSolrDeleteDestination;
+
+    @Autowired
+    private Destination topicPageDestination;
+
+    @Autowired
+    private Destination topicPageDeleteDestination;
 
     /**
      * 返回全部列表
@@ -117,10 +145,22 @@ public class GoodsController {
      * @return
      */
     @RequestMapping("/delete")
-    public Result delete(Long[] ids) {
+    public Result delete(final Long[] ids) {
         try {
             goodsService.delete(ids);
-            itemSearchService.deleteByGoodsIds(Arrays.asList(ids));
+//            itemSearchService.deleteByGoodsIds(Arrays.asList(ids));
+            jmsTemplate.send(queueSolrDeleteDestination, new MessageCreator() {
+                @Override
+                public Message createMessage(Session session) throws JMSException {
+                    return session.createObjectMessage(ids);
+                }
+            });
+            jmsTemplate.send(topicPageDeleteDestination, new MessageCreator() {
+                @Override
+                public Message createMessage(Session session) throws JMSException {
+                    return session.createObjectMessage(ids);
+                }
+            });
             return new Result(true, "删除成功");
         } catch (Exception e) {
             e.printStackTrace();
@@ -161,7 +201,7 @@ public class GoodsController {
      * @return
      */
     @RequestMapping("/updateStatus")
-    public Result updateStatus(Long[] ids, String status) {
+    public Result updateStatus(final Long[] ids, String status) {
         try {
             goodsService.updateStatus(ids, status);
             if ("1".equals(status)) {
@@ -169,10 +209,28 @@ public class GoodsController {
                 List<TbItem> itemList = goodsService.findItemListByGoodsIdAndStatus(ids, status);
                 //调用搜索接口实现数据批量导入
                 if (itemList.size() > 0) {
-                    itemSearchService.importList(itemList);
+//                    itemSearchService.importList(itemList);
+                    final String jsonString = JSON.toJSONString(itemList);  // 转换为JSON字符串
+                    jmsTemplate.send(queueSolrDestination,new MessageCreator() {    // 发送消息
+                        @Override
+                        public Message createMessage(Session session) throws JMSException {
+                            return session.createTextMessage(jsonString);
+                        }
+                    });
                 } else {
                     System.out.println("没有明细数据");
                 }
+                // 生成静态页面
+                for (final Long id : ids) {
+                   // itemPageService.genItemHtml(id);
+                    jmsTemplate.send(topicPageDestination, new MessageCreator() {
+                        @Override
+                        public Message createMessage(Session session) throws JMSException {
+                            return session.createObjectMessage(id+"");
+                        }
+                    });
+                }
+
             }
             return new Result(true, "修改成功");
         } catch (Exception e) {
@@ -180,4 +238,22 @@ public class GoodsController {
             return new Result(false, "修改失败");
         }
     }
+
+
+    /**
+     * 生成静态页面
+     * @param goodsId
+     */
+    @RequestMapping("/genHtml")
+    public void genHtml(final Long goodsId) {
+//        itemPageService.genItemHtml(goodsId);
+        jmsTemplate.send(topicPageDestination, new MessageCreator() {
+            @Override
+            public Message createMessage(Session session) throws JMSException {
+                return session.createObjectMessage(goodsId+"");
+            }
+        });
+    }
+
+
 }
